@@ -2,7 +2,7 @@
   "contract_version": 2,
   "product_name": "nddev-antigravity-cli-app",
   "display_name": "NDDev Antigravity CLI Setup Manager",
-  "github_repository": "NDDev-it-com/nddev-antigravity-cli-app",
+  "github_repository": "rldyourmnd/nddev-antigravity-cli-app",
   "license": "AGPL-3.0-or-later",
   "description": "Dependency-free manager that installs, switches, migrates, restores, and removes one Antigravity CLI content setup plus one orthogonal permission profile in an explicit isolated HOME target.",
   "manifest_ref": "build/manifest.json",
