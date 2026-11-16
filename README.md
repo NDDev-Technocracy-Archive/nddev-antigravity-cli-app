@@ -122,13 +122,19 @@ workspace flag is added by this module.
 Run from the module root:
 
 ```bash
-python3 cli-tools/validate_public_contracts.py
-python3 -m py_compile cli-tools/nddev_antigravity_cli.py cli-tools/validate_public_contracts.py
-python3 cli-tools/nddev_antigravity_cli.py list --json
+just check
+just verify
 ```
 
-Use only temporary targets for local lifecycle smoke checks. Do not run against
-live Antigravity state.
+These checks read the public source and validate contracts, workflow safety and
+secrets without executing the manager. `just verify` also scans every retained
+Git commit. Python, Just, actionlint, zizmor, ShellCheck and Gitleaks must be on
+PATH; the shared CI check prepares their declared versions. The required `gate`
+accepts only a successful shared check.
+
+Source CI maintenance is active while product work remains paused. Runtime,
+installation and lifecycle exercises require product reactivation; the source
+checks do not claim those results.
 
 ## Ownership
 
